@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum JSONError: Error {
+    case decodingError(underlyingError: Error)
+}
+
 extension JSONDecoder {
     public static let iso8601: JSONDecoder = {
         let decoder = JSONDecoder()
