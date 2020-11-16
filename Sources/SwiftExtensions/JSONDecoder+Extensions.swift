@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum JSONError: Error {
+public enum JSONError: Error {
     case decodingError(underlyingError: Error)
 }
 
